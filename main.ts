@@ -60,3 +60,4 @@ console.log(`My fav number is: ${favoriteNum}`);
 // console.log(`My fav number is: 7`);
 
 // ----------Task 11------------
+
