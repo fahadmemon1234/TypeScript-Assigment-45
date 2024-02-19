@@ -49,5 +49,11 @@
 // let transports : string [] = ["Hi-Speed", "Honda Civic", "Audi"];
 // transports.map((item) => console.log(`I would like to own a ${item}`))
 // // ----------Task 14------------
+// let guestArr: string [] = ["Ali", "Ahmed", "Mehak"];
+// guestArr.map((item) => console.log(`Dear ${item}, You are invited to the dinner.`))
+// // ----------Task 15------------
 var guestArr = ["Ali", "Ahmed", "Mehak"];
-guestArr.map(function (item) { return console.log("Dear ".concat(item, ", You are invited to the dinner.")); });
+var canNotAttend = "Mehak";
+var NewGuest = "Fahad";
+guestArr[guestArr.indexOf(canNotAttend)] = NewGuest;
+guestArr.map(function (item) { return console.log(item); });

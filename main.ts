@@ -89,6 +89,16 @@
 // // ----------Task 14------------
 
 
-let guestArr: string [] = ["Ali", "Ahmed", "Mehak"];
-guestArr.map((item) => console.log(`Dear ${item}, You are invited to the dinner.`))
+// let guestArr: string [] = ["Ali", "Ahmed", "Mehak"];
+// guestArr.map((item) => console.log(`Dear ${item}, You are invited to the dinner.`))
 
+// // ----------Task 15------------
+
+let guestArr: string[] = ["Ali", "Ahmed", "Mehak"];  
+let canNotAttend: string = "Mehak";
+
+let NewGuest: string = "Fahad";
+
+guestArr [guestArr.indexOf(canNotAttend)] = NewGuest;
+
+guestArr.map((item)=> console.log(item));
