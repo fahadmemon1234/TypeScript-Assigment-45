@@ -371,23 +371,156 @@
 // }
 // console.log("Array inclusion test: ", isInArray);
 
-
 // // Test whether an item is not in an array
 // console.log("Array exclusion test: ", !fruits.indexOf("mango"));
 
 // // ----------Task 25------------
 
+// // Version 1
+// let alien_color1: string = 'green';
 
-// Version 1 
-let alien_color1: string = 'green';
+// if (alien_color1 === 'green') {
+//     console.log("Version 1: The player just earned 5 points.");
+// }
 
-if (alien_color1 === 'green') {
-    console.log("Version 1: The player just earned 5 points.");
+// // Version 2
+// let alien_color2: string = 'red';
+
+// if (alien_color2 === 'green') {
+//     console.log("Version 2: The player just earned 5 points.");
+// }
+
+// // ----------Task 26------------
+
+// // Version 1
+// let alien_color1 = "green";
+
+// if (alien_color1 === "green") {
+//   console.log("The player just earned 5 points for shooting the green alien.");
+// } else {
+//   console.log("The player just earned 10 points.");
+// }
+
+// // Version 2
+// let alien_color2 = "red";
+
+// if (alien_color2 === "green") {
+//   console.log("The player just earned 5 points for shooting the green alien.");
+// } else {
+//   console.log("The player just earned 10 points.");
+// }
+
+// // ----------Task 27------------
+
+// // Version 1
+// let alien_color1 = "green";
+
+// if (alien_color1 === "green") {
+//   console.log(
+//     "Version 1: The player just earned 5 points for shooting the green alien."
+//   );
+// } else if (alien_color1 === "yellow") {
+//   console.log(
+//     "Version 1: The player just earned 10 points for shooting the yellow alien."
+//   );
+// } else if (alien_color1 === "red") {
+//   console.log(
+//     "Version 1: The player just earned 15 points for shooting the red alien."
+//   );
+// }
+
+// // Version 2
+// let alien_color2 = "yellow";
+
+// if (alien_color2 === "green") {
+//   console.log(
+//     "Version 2: The player just earned 5 points for shooting the green alien."
+//   );
+// } else if (alien_color2 === "yellow") {
+//   console.log(
+//     "Version 2: The player just earned 10 points for shooting the yellow alien."
+//   );
+// } else if (alien_color2 === "red") {
+//   console.log(
+//     "Version 2: The player just earned 15 points for shooting the red alien."
+//   );
+// }
+
+// // Version 3
+// let alien_color3 = "red";
+
+// if (alien_color3 === "green") {
+//   console.log(
+//     "Version 3: The player just earned 5 points for shooting the green alien."
+//   );
+// } else if (alien_color3 === "yellow") {
+//   console.log(
+//     "Version 3: The player just earned 10 points for shooting the yellow alien."
+//   );
+// } else if (alien_color3 === "red") {
+//   console.log(
+//     "Version 3: The player just earned 15 points for shooting the red alien."
+//   );
+// }
+
+
+// // ----------Task 28------------
+
+// let age = 25;
+
+// if (age < 2) {
+//     console.log("The person is a baby.");
+// } else if (age >= 2 && age < 4) {
+//     console.log("The person is a toddler.");
+// } else if (age >= 4 && age < 13) {
+//     console.log("The person is a kid.");
+// } else if (age >= 13 && age < 20) {
+//     console.log("The person is a teenager.");
+// } else if (age >= 20 && age < 65) {
+//     console.log("The person is an adult.");
+// } else {
+//     console.log("The person is an elder.");
+// }
+
+
+// // ----------Task 29------------
+
+// // Array of favorite fruits
+// let favorite_fruits = ['apple', 'banana', 'mango'];
+
+// // Check for specific fruits in the array without using includes method
+// if (favorite_fruits.indexOf('apple') !== -1) {
+//     console.log("You really like apples!");
+// }
+
+// if (favorite_fruits.indexOf('banana') !== -1) {
+//     console.log("You really like bananas!");
+// }
+
+// if (favorite_fruits.indexOf('mango') !== -1) {
+//     console.log("You really like mangoes!");
+// }
+
+// if (favorite_fruits.indexOf('orange') !== -1) {
+//     console.log("You really like oranges!");
+// }
+
+// if (favorite_fruits.indexOf('strawberry') !== -1) {
+//     console.log("You really like strawberries!");
+// }
+
+
+// // ----------Task 30------------
+
+// Array of usernames
+let usernames = ['alice', 'bob', 'admin', 'david', 'emma'];
+
+// Loop through the array and print greetings
+for (let username of usernames) {
+    if (username === 'admin') {
+        console.log("Hello admin, would you like to see a status report?");
+    } else {
+        console.log(`Hello ${username}, thank you for logging in again.`);
+    }
 }
 
-// Version 2
-let alien_color2: string = 'red';
-
-if (alien_color2 === 'green') {
-    console.log("Version 2: The player just earned 5 points.");
-}
