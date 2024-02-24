@@ -63,7 +63,7 @@
 // guestArr.map((item)=> console.log(item));
 // // ----------Task 16------------
 var guestArr = ["Ali", "Ahmed", "Mehak", "Almas", "Bilal"];
-var canNotAttend = "Madni";
+var canNotAttend = "Mehak";
 var NewGuest = "Fahad";
 guestArr[guestArr.indexOf(canNotAttend)] = NewGuest;
 console.log(guestArr);

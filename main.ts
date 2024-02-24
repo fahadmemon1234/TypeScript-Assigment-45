@@ -117,7 +117,7 @@
 
 let guestArr = ["Ali", "Ahmed", "Mehak", "Almas", "Bilal"];
 
-let canNotAttend = "Madni";
+let canNotAttend = "Mehak";
 
 let NewGuest = "Fahad";
 
