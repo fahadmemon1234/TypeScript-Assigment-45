@@ -56,7 +56,7 @@
 // let guestArr = ["Ali", "Ahmed", "Mehak"];
 // guestArr.map((item) => console.log(`Dear ${item}, You are invited to the dinner.`))
 // // ----------Task 15------------
-// let guestArr = ["Ali", "Ahmed", "Mehak"];  
+// let guestArr = ["Ali", "Ahmed", "Mehak"];
 // let canNotAttend = "Mehak";
 // let NewGuest = "Fahad";
 // guestArr [guestArr.indexOf(canNotAttend)] = NewGuest;
@@ -67,3 +67,20 @@ var canNotAttend = "Mehak";
 var NewGuest = "Fahad";
 guestArr[guestArr.indexOf(canNotAttend)] = NewGuest;
 console.log(guestArr);
+// guestArr.map((item)=> console.log(`Dear ${item}, I found a bigger dinner table so I am invited more peoples.`));
+// part 2 began
+var guestBeg = "Muizz";
+guestArr.unshift(guestBeg);
+console.log(guestArr);
+// part 3 Middle
+var guestMiddle = "Hamza";
+var MiddleIndex = guestArr.length / 3;
+guestArr.splice(MiddleIndex, 0, guestMiddle);
+console.log(guestArr);
+// part 4 append
+guestArr.push("Zeeshan");
+console.log(guestArr);
+// part 5
+guestArr.map(function (items) {
+    return console.log("Dear ".concat(items, " you are invited in the more people category on dinner"));
+});

@@ -53,16 +53,13 @@
 
 // console.log(16 / 2);
 
-
 // // ----------Task 9------------
 
 // let favoriteNum = 5;
 
 // console.log(`My fav number is: ${favoriteNum}`);
 
-
 // // ----------Task 10------------
-
 
 // // question answer comment
 // // console.log(`My fav number is: 7`);
@@ -75,7 +72,6 @@
 // console.log(names[2]);
 // console.log(names[3]);
 
-
 // // ----------Task 12------------
 
 // let names = ["Ali", "Ahmed", "Mehak", "Khan"];
@@ -87,8 +83,6 @@
 // console.log(names[2] + " " + message);
 // console.log(names[3] + " " + message);
 
-
-
 // // ----------Task 13------------
 
 // let transports = ["Hi-Speed", "Honda Civic", "Audi"];
@@ -96,13 +90,12 @@
 
 // // ----------Task 14------------
 
-
 // let guestArr = ["Ali", "Ahmed", "Mehak"];
 // guestArr.map((item) => console.log(`Dear ${item}, You are invited to the dinner.`))
 
 // // ----------Task 15------------
 
-// let guestArr = ["Ali", "Ahmed", "Mehak"];  
+// let guestArr = ["Ali", "Ahmed", "Mehak"];
 // let canNotAttend = "Mehak";
 
 // let NewGuest = "Fahad";
@@ -111,9 +104,7 @@
 
 // guestArr.map((item)=> console.log(item));
 
-
 // // ----------Task 16------------
-
 
 let guestArr = ["Ali", "Ahmed", "Mehak", "Almas", "Bilal"];
 
@@ -121,10 +112,40 @@ let canNotAttend = "Mehak";
 
 let NewGuest = "Fahad";
 
-guestArr [guestArr.indexOf(canNotAttend)] = NewGuest;
+guestArr[guestArr.indexOf(canNotAttend)] = NewGuest;
 
 console.log(guestArr);
 
+// guestArr.map((item)=> console.log(`Dear ${item}, I found a bigger dinner table so I am invited more peoples.`));
 
+// part 2 began
 
+let guestBeg = "Muizz";
 
+guestArr.unshift(guestBeg);
+
+console.log(guestArr);
+
+// part 3 Middle
+
+let guestMiddle = "Hamza";
+
+let MiddleIndex = guestArr.length / 3;
+
+guestArr.splice(MiddleIndex, 0, guestMiddle);
+
+console.log(guestArr);
+
+// part 4 append
+
+guestArr.push("Zeeshan");
+
+console.log(guestArr);
+
+// part 5
+
+guestArr.map((items) =>
+  console.log(
+    `Dear ${items} you are invited in the more people category on dinner`
+  )
+);
