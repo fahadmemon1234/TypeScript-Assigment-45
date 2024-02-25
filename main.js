@@ -351,15 +351,70 @@
 //     console.log("You really like strawberries!");
 // }
 // // ----------Task 30------------
-// Array of usernames
-var usernames = ['alice', 'bob', 'admin', 'david', 'emma'];
-// Loop through the array and print greetings
-for (var _i = 0, usernames_1 = usernames; _i < usernames_1.length; _i++) {
-    var username = usernames_1[_i];
-    if (username === 'admin') {
-        console.log("Hello admin, would you like to see a status report?");
-    }
-    else {
-        console.log("Hello ".concat(username, ", thank you for logging in again."));
-    }
+// // Array of usernames
+// let usernames = ['alice', 'bob', 'admin', 'david', 'emma'];
+// // Loop through the array and print greetings
+// for (let username of usernames) {
+//     if (username === 'admin') {
+//         console.log("Hello admin, would you like to see a status report?");
+//     } else {
+//         console.log(`Hello ${username}, thank you for logging in again.`);
+//     }
+// }
+// // ----------Task 31------------
+// let usernames = [];
+// if (usernames.length === 0) {
+//     console.log("We need to find some users!");
+// } else {
+//     for (let username of usernames) {
+//         if (username === 'admin') {
+//             console.log("Hello admin, would you like to see a status report?");
+//         } else {
+//             console.log(`Hello ${username}, thank you for logging in again.`);
+//         }
+//     }
+// }
+// // ----------Task 32------------
+// let current_users = ['john', 'alice', 'bob', 'emma', 'david'];
+// let new_users = ['alice', 'jane', 'eric', 'DAVID', 'mike'];
+// for (let new_user of new_users) {
+//     let usernameExists = current_users.some(user => user.toLowerCase() === new_user.toLowerCase());
+//     if (usernameExists) {
+//         console.log(`Username "${new_user}" is not available. Please enter a new username.`);
+//     } else {
+//         console.log(`Username "${new_user}" is available.`);
+//     }
+// }
+// // ----------Task 33------------
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// for (let number of numbers) {
+//   if (number === 1) {
+//     console.log(`${number}st`);
+//   } else if (number === 2) {
+//     console.log(`${number}nd`);
+//   } else if (number === 3) {
+//     console.log(`${number}rd`);
+//   } else {
+//     console.log(`${number}th`);
+//   }
+// }
+// // ----------Task 34------------
+// let pizzas = ["pepperoni", "margherita", "hawaiian"];
+// for (let pizza of pizzas) {
+//   console.log(pizza);
+// }
+// console.log("\n");
+// for (let pizza of pizzas) {
+//   console.log(`I like ${pizza} pizza.`);
+// }
+// console.log("\n");
+// console.log("I really enjoy the variety of flavors in pizzas.");
+// console.log("The combination of cheese, sauce, and toppings is delicious.");
+// console.log("Pizza is one of my favorite comfort foods.");
+// console.log("I really love pizza!");
+// // ----------Task 35------------
+var animals = ["dog", "cat", "rabbit"];
+for (var _i = 0, animals_1 = animals; _i < animals_1.length; _i++) {
+    var animal = animals_1[_i];
+    console.log("A ".concat(animal, " would make a great pet."));
 }
