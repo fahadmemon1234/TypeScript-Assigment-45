@@ -413,8 +413,125 @@
 // console.log("Pizza is one of my favorite comfort foods.");
 // console.log("I really love pizza!");
 // // ----------Task 35------------
-var animals = ["dog", "cat", "rabbit"];
-for (var _i = 0, animals_1 = animals; _i < animals_1.length; _i++) {
-    var animal = animals_1[_i];
-    console.log("A ".concat(animal, " would make a great pet."));
+// let animals = ["dog", "cat", "rabbit"];
+// for (let animal of animals) {
+//   console.log(`A ${animal} would make a great pet.`);
+// }
+// // ----------Task 36------------
+// function make_shirt(size: string, message: string): void {
+//   console.log(`Shirt size: ${size.toUpperCase()}, Message: "${message}"`);
+// }
+// make_shirt('medium', 'Hello, World!');
+// // ----------Task 37------------
+// function make_shirt(size: string = 'large', message: string = 'I love TypeScript'): void {
+//   console.log(`Shirt size: ${size.toUpperCase()}, Message: "${message}"`);
+// }
+// make_shirt();
+// make_shirt('medium');
+// // different Message
+// make_shirt('small', 'Hello, World!');
+// // ----------Task 38------------
+// function describe_city(city: string, country: string = 'Pakistan'): void {
+//   console.log(`${city} is in ${country}.`);
+// }
+// describe_city('Karachi');
+// describe_city('London', 'United Kingdom');
+// describe_city('Tokyo', 'Japan');
+// // ----------Task 39------------
+// function city_country(city: string, country: string): string {
+//   return `${city}, ${country}`;
+// }
+// console.log(city_country('Lahore', 'Pakistan'));
+// console.log(city_country('Paris', 'France'));
+// console.log(city_country('New York', 'USA'));
+// // ----------Task 40------------
+// function make_album(artist: string, title: string, tracks?: number): { artist: string, title: string, tracks?: number } {
+//     let album: { artist: string, title: string, tracks?: number } = {
+//         artist: artist,
+//         title: title
+//     };
+//     if (tracks !== undefined) {
+//         album.tracks = tracks;
+//     }
+//     return album;
+// }
+// let album1 = make_album('Artist 1', 'Album 1');
+// let album2 = make_album('Artist 2', 'Album 2', 12); 
+// let album3 = make_album('Artist 3', 'Album 3');
+// console.log(album1);
+// console.log(album2);
+// console.log(album3);
+// // ----------Task 41------------
+// function show_magicians(magicians: string[]): void {
+//     for (let magician of magicians) {
+//         console.log(magician);
+//     }
+// }
+// let magicians= ['Harry Houdini', 'David Copperfield', 'Penn Jillette', 'Teller'];
+// show_magicians(magicians);
+// // ----------Task 42------------
+// function show_magicians(magicians: string[]): void {
+//     for (let magician of magicians) {
+//         console.log(magician);
+//     }
+// }
+// function make_great(magicians: string[]): string[] {
+//     let great_magicians = [];
+//     for (let magician of magicians) {
+//         great_magicians.push(`${magician} the Great`);
+//     }
+//     return great_magicians;
+// }
+// let magicians = ['Harry Houdini', 'David Copperfield', 'Penn Jillette', 'Teller'];
+// let great_magicians = make_great(magicians);
+// show_magicians(great_magicians);
+// // ----------Task 43------------
+// function show_magicians(magicians: string[]): void {
+//     for (let magician of magicians) {
+//         console.log(magician);
+//     }
+// }
+// function make_great2(magician): string[] {
+//     const greatMagicians: string[] = [];
+//     for(let i = 0; i < magician.length; i++){
+//         greatMagicians.push(magician[i] + ' the Great');
+//     }
+//     return greatMagicians;
+// }
+// const magician3 = ["usman", "haseeb","wajahat"];
+// const greatMagicians2 = make_great2(magician3);
+// show_magicians(magician3)
+// show_magicians(greatMagicians2)
+// // ----------Task 44------------
+function makeSandwich() {
+    var items = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        items[_i] = arguments[_i];
+    }
+    console.log("Making a sandwich with:");
+    for (var _a = 0, items_1 = items; _a < items_1.length; _a++) {
+        var item = items_1[_a];
+        console.log("- " + item);
+    }
+    console.log("Enjoy your sandwich!\n");
 }
+makeSandwich('ham', 'cheese', 'lettuce');
+makeSandwich('turkey', 'bacon');
+makeSandwich('peanut butter', 'jelly');
+// // ----------Task 45------------
+function createCar(manufacturer, modelName) {
+    var options = [];
+    for (var _i = 2; _i < arguments.length; _i++) {
+        options[_i - 2] = arguments[_i];
+    }
+    var car = {
+        manufacturer: manufacturer,
+        modelName: modelName
+    };
+    for (var i = 0; i < options.length; i += 2) {
+        car[options[i]] = options[i + 1];
+    }
+    return car;
+}
+var car = createCar('Toyota', 'Camry', 'color', 'blue', 'year', 2022);
+console.log(car);
